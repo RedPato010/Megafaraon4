@@ -2,20 +2,42 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>🎰 Mega Faraón - Bono del 30%</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WhatsApp Bonos</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Meta Pixel Code -->
+  <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src='https://connect.facebook.net/en_US/fbevents.js';
+    s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script');
+    fbq('init', '1053176933005691');
+    fbq('track', 'PageView');
+  </script>
+  <noscript>
+    <img height="1" width="1" style="display:none"
+      src="https://www.facebook.com/tr?id=1053176933005691&ev=PageView&noscript=1"/>
+  </noscript>
+  <!-- End Meta Pixel Code -->
+
   <style>
     body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
       background-color: #000;
       color: #fff;
-      font-family: 'Segoe UI', sans-serif;
-      text-align: center;
       padding: 30px 20px;
+      text-align: center;
     }
 
     h1 {
-      color: #ffd700;
       font-size: 2.2em;
+      color: #ffd700;
       margin-bottom: 10px;
     }
 
@@ -46,13 +68,14 @@
     .boton-wpp {
       display: inline-block;
       background-color: #25D366;
-      color: #fff;
+      color: white;
       padding: 15px 30px;
       font-size: 18px;
       border-radius: 10px;
       text-decoration: none;
       margin-top: 20px;
-      transition: background-color 0.3s;
+      font-weight: bold;
+      transition: background 0.3s;
     }
 
     .boton-wpp:hover {
@@ -64,29 +87,37 @@
       font-size: 0.9em;
       color: #aaa;
     }
+
+    @media (max-width: 600px) {
+      h1 { font-size: 1.8em; }
+      .boton-wpp { font-size: 16px; padding: 14px 25px; }
+      .info { font-size: 0.95em; }
+    }
   </style>
 </head>
 <body>
 
-  <h1>🎰 Mega Faraón</h1>
-  <p class="subtitulo">Bono exclusivo del <strong>30%</strong> para nuevos jugadores</p>
+  <h1>🎰 WhatsApp Bonos</h1>
+  <p class="subtitulo">Solicitá tu <strong>bono del 30%</strong> exclusivo por WhatsApp</p>
 
   <div class="info">
-    ✅ <strong>Registro 100% gratuito</strong><br />
-    🔒 Plataforma segura y verificada<br />
-    🎮 Juegos disponibles: Ruleta, Blackjack, Deportivas y más<br />
+    ✅ Plataforma 100% segura y verificada<br />
+    🔒 Tus datos están protegidos<br />
+    🎮 Juegos: Ruleta, Blackjack, Minas y más<br />
     💸 Retirá tus ganancias cuando quieras<br />
-    🕘 <span>Atención personalizada las 24hs</span>
-
-    <p class="contador">👥 Usuarios conectados: <span id="usuarios">...</span></p>
+    📲 Atención 24/7 en todo el país<br />
+    <p class="contador">👥 Usuarios conectados ahora: <span id="usuarios">...</span></p>
   </div>
 
-  <a class="boton-wpp" href="https://wa.me/5493564225100?text=%F0%9F%8E%B0+%C2%A1Hola%21+Quiero+reclamar+el+bono+del+30%25+de+bienvenida.+%C2%BFMe+pod%C3%A9s+crear+un+usuario%3F+%F0%9F%92%B0%F0%9F%94%A5" target="_blank">
-    💬 Pedir bono por WhatsApp
+  <a class="boton-wpp"
+     href="https://wa.me/23455643177?text=Hola%2C+quiero+reclamar+el+bono+del+30%25+de+bienvenida"
+     target="_blank"
+     onclick="fbq('trackCustom', 'ClickWhatsApp')">
+    💬 Pedir Bono por WhatsApp
   </a>
 
   <div class="footer">
-    📲 Es necesario verificar tu cuenta por WhatsApp antes de ingresar.
+    ⚠️ Es necesario verificar tu cuenta por WhatsApp para comenzar a jugar
   </div>
 
   <script>
@@ -96,7 +127,7 @@
     }
 
     actualizarUsuarios();
-    setInterval(actualizarUsuarios, 4000); // cambia cada 4 seg
+    setInterval(actualizarUsuarios, 4000);
   </script>
 
 </body>
