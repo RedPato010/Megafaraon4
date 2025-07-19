@@ -3,79 +3,60 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Casino Mega Faraón</title>
+  <title>🎰 Mega Faraón - Bono del 30%</title>
   <style>
     body {
-      margin: 0;
-      padding: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background: url('https://i.imgur.com/iqVCv7r.jpg') no-repeat center center fixed;
-      background-size: cover;
+      background-color: #000;
       color: #fff;
+      font-family: 'Segoe UI', sans-serif;
       text-align: center;
-      backdrop-filter: brightness(0.6);
-    }
-
-    .contenedor {
-      padding: 40px 20px;
-      max-width: 600px;
-      margin: auto;
-      background-color: rgba(0, 0, 0, 0.7);
-      border-radius: 15px;
-      box-shadow: 0 0 10px #000;
+      padding: 30px 20px;
     }
 
     h1 {
-      font-size: 2.5em;
       color: #ffd700;
+      font-size: 2.2em;
       margin-bottom: 10px;
     }
 
     .subtitulo {
-      font-size: 1.3em;
-      margin-bottom: 20px;
+      font-size: 1.2em;
+      margin-bottom: 30px;
+    }
+
+    .info {
+      background-color: #111;
+      padding: 20px;
+      border-radius: 12px;
+      margin-bottom: 30px;
+      line-height: 1.6;
+    }
+
+    .info span {
+      color: #0f0;
+      font-weight: bold;
     }
 
     .contador {
       font-size: 1.1em;
-      margin-bottom: 20px;
+      margin-top: 10px;
       color: #0f0;
     }
 
     .boton-wpp {
-      background-color: #25D366;
-      color: white;
-      font-size: 20px;
-      padding: 15px 30px;
-      border: none;
-      border-radius: 12px;
-      cursor: pointer;
-      text-decoration: none;
       display: inline-block;
-      margin-top: 30px;
-      transition: background 0.3s;
+      background-color: #25D366;
+      color: #fff;
+      padding: 15px 30px;
+      font-size: 18px;
+      border-radius: 10px;
+      text-decoration: none;
+      margin-top: 20px;
+      transition: background-color 0.3s;
     }
 
     .boton-wpp:hover {
-      background-color: #1ebc5c;
-    }
-
-    .proveedores {
-      margin-top: 40px;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 15px;
-    }
-
-    .proveedores img {
-      height: 40px;
-      opacity: 0.9;
-      transition: transform 0.3s;
-    }
-
-    .proveedores img:hover {
-      transform: scale(1.1);
+      background-color: #1ebe5d;
     }
 
     .footer {
@@ -83,55 +64,39 @@
       font-size: 0.9em;
       color: #aaa;
     }
-
-    @media (max-width: 600px) {
-      .boton-wpp {
-        font-size: 18px;
-        padding: 12px 24px;
-      }
-      h1 {
-        font-size: 2em;
-      }
-      .proveedores img {
-        height: 30px;
-      }
-    }
   </style>
 </head>
 <body>
 
-  <div class="contenedor">
-    <h1>🎰 ¡Bienvenido a Mega Faraón!</h1>
-    <p class="subtitulo">📲 Obtené tu usuario y recibí <strong>un 30% de bono</strong> para empezar a jugar</p>
+  <h1>🎰 Mega Faraón</h1>
+  <p class="subtitulo">Bono exclusivo del <strong>30%</strong> para nuevos jugadores</p>
 
-    <p class="contador">👥 Usuarios conectados ahora: <span id="usuarios">...</span></p>
+  <div class="info">
+    ✅ <strong>Registro 100% gratuito</strong><br />
+    🔒 Plataforma segura y verificada<br />
+    🎮 Juegos disponibles: Ruleta, Blackjack, Minas y más<br />
+    💸 Retirá tus ganancias cuando quieras<br />
+    🕘 <span>Atención personalizada las 24hs</span>
 
-    <a class="boton-wpp" href="https://wa.me/5493564225100?text=%F0%9F%8E%B0+%C2%A1Hola%21+Quiero+reclamar+el+bono+del+30%25+de+bienvenida.+%C2%BFMe+pod%C3%A9s+crear+un+usuario%3F+%F0%9F%92%B0%F0%9F%94%A5" target="_blank">
-      💬 Pedir Bono por WhatsApp
-    </a>
+    <p class="contador">👥 Usuarios conectados: <span id="usuarios">...</span></p>
+  </div>
 
-    <div class="proveedores">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/9/9e/NetEnt_logo.svg" alt="NetEnt" />
-      <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Pragmatic_Play_Logo.png" alt="Pragmatic" />
-      <img src="https://upload.wikimedia.org/wikipedia/commons/7/7c/Playtech_logo.svg" alt="Playtech" />
-      <img src="https://upload.wikimedia.org/wikipedia/commons/3/34/Betsoft_Logo.png" alt="Betsoft" />
-      <img src="https://upload.wikimedia.org/wikipedia/commons/e/ed/Habanero_logo.png" alt="Habanero" />
-      <img src="https://upload.wikimedia.org/wikipedia/commons/1/11/Nolimit_City_logo.png" alt="NolimitCity" />
-    </div>
+  <a class="boton-wpp" href="https://wa.me/5493564225100?text=%F0%9F%8E%B0+%C2%A1Hola%21+Quiero+reclamar+el+bono+del+30%25+de+bienvenida.+%C2%BFMe+pod%C3%A9s+crear+un+usuario%3F+%F0%9F%92%B0%F0%9F%94%A5" target="_blank">
+    💬 Pedir bono por WhatsApp
+  </a>
 
-    <div class="footer">
-      ✅ Verificación requerida antes de ingresar a la plataforma.
-    </div>
+  <div class="footer">
+    📲 Es necesario verificar tu cuenta por WhatsApp antes de ingresar.
   </div>
 
   <script>
     function actualizarUsuarios() {
-      const base = 98 + Math.floor(Math.random() * 30); // entre 98 y 128
-      document.getElementById('usuarios').textContent = base;
+      const numero = 120 + Math.floor(Math.random() * 30); // entre 120 y 150
+      document.getElementById('usuarios').textContent = numero;
     }
 
     actualizarUsuarios();
-    setInterval(actualizarUsuarios, 5000);
+    setInterval(actualizarUsuarios, 4000); // cambia cada 4 seg
   </script>
 
 </body>
